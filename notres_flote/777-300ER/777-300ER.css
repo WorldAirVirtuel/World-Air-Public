@@ -1,0 +1,200 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #444;
+}
+
+/*header*/
+header {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #0e274a;
+    width: 100%;
+    border-bottom: 1px solid #0e274a;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Pour permettre le positionnement du sous-menu */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Couleur de texte en blanc */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Poids de police normal */
+    font-size: 16px;
+}
+
+/* Effet au survol des liens */
+nav ul li a:hover {
+    color: #007bff; /* Couleur de survol */
+}
+
+/* Styles pour le sous-menu */
+.dropdown-menu {
+    display: none; /* Masquer le sous-menu par défaut */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0e274a;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 200px;
+    border: 1px solid #0e274a; /* Ajouter une bordure */
+}
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #fff; /* Couleur de texte du sous-menu */
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #007bff; /* Couleur de survol du sous-menu */
+}
+
+/* Afficher le sous-menu au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    clip-path: inset(300px 0 90px 0);
+    position: relative;
+    margin-top: -300px;
+    margin-bottom: -90px;
+}
+.text{
+    color: #fff;
+}
+h2{
+    margin-left: 150px;
+    margin-top: 25px;
+}
+p{
+    margin-left: 150px;
+    
+}
+.specifications {
+    width: 40%;
+    margin-left: 150px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    
+}
+.specifications th {
+    background-color: #0e274a;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    text-align: center;
+}
+.specifications td {
+    padding: 10px;
+    border: 1px solid #000;
+    
+}
+.specifications tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.one{
+    color: #fff;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.image-container .text-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;}
+/*FOOTER*/
+.custom-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0e274a; /* Couleur de fond pour le footer */
+    color: #fff; /* Couleur du texte dans le footer */
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav-item {
+    margin: 0 10px;
+}
+
+.footer-nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav-link:hover {
+    text-decoration: underline;
+}

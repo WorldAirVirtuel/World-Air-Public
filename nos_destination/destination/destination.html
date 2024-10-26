@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>World Air destination</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="destination.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="icon" href="/fixe/logo_WA.webp" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <li><a href="/index.html"><img src="/fixe/logo.png" alt="Logo de World Air"></a></li>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">ACCUEIL</a></li>
+                    <li><a href="https://worldairva.nicepage.io/">NOUS REJOINDRE</a></li>
+                    <li><a href="https://worldairva.nicepage.io/NOUS-CONTACTER.html">NOUS CONTACTER</a></li>
+                    <li class="dropdown">
+                        <a href="#">NOS PILOTES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/nos_pilote/liste/liste.html">LISTE DES PILOTES</a></li>
+                            <li><a href="/nos_pilote/carnet/carnet.html">CARNET DE VOL</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">SUR NOUS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/notres_flote\flotte_acceuil.html">NOTRE FLOTTE</a></li>
+                            <li><a href="/nos_destination/destination/destination.html">NOS DESTINATIONS</a></li>
+                            <li><a href="/nos_hub/index.html">NOS HUB</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ESPACE PILOTES [INOP]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="search-indicators">
+        <select id="hub-select">
+            <option value="">Tout les hub</option>
+            <option value="LFMN">LFMN</option>
+            <option value="CYUL">CYUL</option>
+            <option value="LFPO">LFPO</option>
+        </select>
+        <input type="text" id="search-depart" placeholder="Rechercher par départ">
+        <input type="text" id="search-arrivee" placeholder="Rechercher par arrivée">
+
+    </div>
+    
+    
+
+    <div class="flight-container">
+        <div class="flight-card">
+            <img src="dubai.webp" alt="DUBAI">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">DUBAI (OMDB)</h3>
+            <p>6h 40min<br>936€<br> 4784Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="seoul.webp" alt="SÉOUL">
+            <h3 class="dep">NICE (LFMN) </h3>
+            <h3 class="arr">SÉOUL (RKSI)</h3>
+            <p>10h 27min<br>1657€<br>9116Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="cancun.webp" alt="CANCÚN">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">CANCÚN (MMUN)</h3>
+            <p>4h 35min<br>635€<br>2969Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Montreal.webp" alt="MONTREAL">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MONTREAL (CYUL)</h3>
+            <p>7h 37min<br>1160€<br> 6128Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Tenerife.webp" alt="TENERIFE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">TENERIFE (GCXO)</h3>
+            <p>3h 37min<br>588€<br>2691kM</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Nice.webp" alt="NICE">
+            <h3 class="dep">PARIS (LFPO)</h3> 
+            <h3 class="arr">NICE (LFMN)</h3>
+            <p>1h 9min<br>252€<br>676Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Palermes.png" alt="PALERME">
+            <h3 class="dep">PARIS (LFPO)</h3> 
+            <h3 class="arr">PALERME (LICJ)</h3>
+            <p>1h 40min<br>383€<br>1456Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bergen.jpg" alt="BERGEN">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BERGEN (ENBR)</h3>
+            <p>2h 23min<br>448€<br>1854Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="chicago.webp" alt="CHICAGO">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">CHICAGO (KORD)</h3>
+            <p>1h 39min<br>341€<br>1200Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="london.webp" alt="LONDRE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LONDRE (EGLL)</h3>
+            <p>1h 39min<br>312€<br>1041Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="dublin.webp" alt="DUBLIN">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">DUBLIN  (EIDW)</h3>
+            <p>1h 32min<br> 385€<br> 1467Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="riyadh.jpg" alt="RIYADH">
+            <h3 class="dep">NICE (LFMN)</h3> 
+            <h3 class="arr">RIYADH (OERK)</h3>
+            <p>5h 20min<br> 825€<br> 4126Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Zagreb.avif" alt="ZAGREB">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ZAGREB (LDZA)</h3>
+            <p>3h 10min<br> 264€<br>737Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bruxelles.webp" alt="BREUXELLES">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BRUXELLES (EBBR)</h3>
+            <p>1h 45min<br> 278€<br> 832Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="dublin.webp" alt="DUBLIN">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">DUBLIN (EIDW)</h3>
+            <p>1h 55min<br> 273€<br> 796Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="rennes.jpg" alt="RENNES">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">RENNES (LFRN)</h3>
+            <p>1h 40min<br> 281€<br> 848Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Palermes.png" alt="PALERME">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">PALERME (LICJ)</h3>
+            <p>1h 35min<br> 271€<br> 783Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="ajaccio.jpg" alt="AJACCIO">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">AJACCIO (LFKJ)</h3>
+            <p>1h 35min<br> 292€<br> 907Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="toulouse.jpg" alt="TOULOUSE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">TOULOUSE (LFBO)</h3>
+            <p>1h 15min<br> 219€<br> 470Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="minorque.jpg" alt="MINORQUE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MINORQUE (LEMH)</h3>
+            <p>0h 56min<br> 222€<br> 489Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="BEYROUTH.jfif" alt="BEYROUTH">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BEYROUTH (OLBA)</h3>
+            <p>3h 13min<br> 637€<br> 2669Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="detroit.jpg" alt="#">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">DETROIT (KDTW)</h3>
+            <p>1h 55min<br> 283€<br> 850Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="ibiza.jfif" alt="IBIZA">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">IBIZA (LEIB)</h3>
+            <p>1h 35min<br> 260€<br> 722Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="moscou.jpg" alt="MOSCOU">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MOSCOU (UUMO)</h3>
+            <p>3h 15min<br> 554€<br> 2484Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="ajaccio.jpg" alt="AJACCIO">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">AJACCIO (LFKJ)</h3>
+            <p>30min<br> 180€<br> 233Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Argel.webp" alt="ALGER">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ALGER (DAAG)</h3>
+            <p>1h 12min<br> 281€<br> 854Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="rome.webp" alt="ROME">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ROME (LIRF)</h3>
+            <p>1h 15min<br> 217€<br> 459Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="london.webp" alt="LONDON">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">LONDRE (EGLL)</h3>
+            <p>1h 10min<br> 201€<br> 367Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="madrid.webp" alt="#">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MADRID (LEMD)</h3>
+            <p>2h<br> 299€<br> 956Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="venice.webp" alt="VENISE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">VENISE (LIPZ)</h3>
+            <p>1h 05min<br> 215€<br> 456Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Sevilla.webp" alt="SÉVILLE">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">SÉVILLE (LEZL)</h3>
+            <p>2h 25min<br> 376€<br> 1422Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="manchester.webp" alt="MANCHESTER">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MANCHESTER (EGCC)</h3>
+            <p>1h 35min<br> 241€<br> 607Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="moscou.jpg" alt="MOSCOU">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MOSCOU (UUMO)</h3>
+            <p>3h 48min<br> 562€<br> 2521Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Lisbona.webp" alt="LISBONNE">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">LISBONNE (LPPT)</h3>
+            <p>2h 35min<br> 379€<br> 1437Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="manchester.webp" alt="MANCHESTER">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MANCHESTER (EGCC)</h3>
+            <p>1h 38min<br> 353€<br> 1282Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Montpellier.webp" alt="MONTPELLIER ">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MONTPELLIER (LFMT)</h3>
+            <p>54min<br> 239€<br> 585Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Sevilla.webp" alt="SÉVILLE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">SÉVILLE (LEZL)</h3>
+            <p>1h 48min<br> 358€<br> 1306Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="munich.webp" alt="MUNICH">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">MUNICH (EDDM)</h3>
+            <p>1h<br> 245€<br> 630Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="DORTMUND.jfif" alt="DORTMUND">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">DORTMUND (EDLW)</h3>
+            <p>47min<br> 222€<br> 485Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bruxelles.webp" alt="BRUXELLES">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BRUXELLES (EBBR)</h3>
+            <p>1h 02min<br> 187€<br> 285Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Lyon.webp" alt="LYON">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LYON (LFLL)</h3>
+            <p>55min<br> 187€<br> 285Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Lyon.webp" alt="LYON">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">LYON (LFLL)</h3>
+            <p>48min<br> 206€<br> 393Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="madrid.webp" alt="MADRID">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">MADRID (LEMD)</h3>
+            <p>2h 05min<br> 311€<br> 1028Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bangalore.webp" alt="BANGALORE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BANGALORE (VOBL)</h3>
+            <p>9h 08min<br> 1381€<br> 7434Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Barcelona.webp" alt="BARCELONE">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BARCELONE (LEBL)</h3>
+            <p>1h 20min<br> 222€<br> 496Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Doha.webp" alt="DOHA">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">DOHA (OTHH)</h3>
+            <p>5h 55min<br> 889€<br> 4486Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="gibraltar.jpg" alt="GIBRALTAR">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">GIBRALTAR (LXGB)</h3>
+            <p>2h 32min<br> 367€<br> 1356Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Barcelona.webp" alt="BARCELONE">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BARCELONE (LEBL)</h3>
+            <p>1h 40min<br> 278€<br> 826Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="liverpool.webp" alt="LIVERPOOL">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LIVERPOOL (EGGP)</h3>
+            <p>2h 20min<br> 358€<br> 1304Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="bergen.jpg" alt="BERGEN">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BERGEN (ENBR)</h3>
+            <p>2h 20min<br> 358€<br> 1298Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="NewYork.webp" alt="NEWYORK">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">NEW YORK (KJFK)</h3>
+            <p>8h 52min<br> 1210€<br> 6406Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="tokyo.webp" alt="TOKYO">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">TOKYO (LFMN)</h3>
+            <p>11h 48min<br> 1807€<br> 9986Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="NewYork.webp" alt="NEWYORK">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">NEW YORK (KJFK)</h3>
+            <p>8h 15min<br> 1114€<br> 5832Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="buenos-aires.webp" alt="BUENOS AIRES">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">BUENOS AIRES (SAEZ)</h3>
+            <p>13h 05min<br> 1971€<br> 10969Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/R.73d3255315094f689bb91cdc201a8a2c?rik=MykcU2VfBJXMYg&pid=ImgRaw&r=0" alt="SBGL">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">RIO DE JANEIRO (SBGL)</h3>
+            <p>11h 07min<br> 1638€<br> 9004Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="data:image/jpeg;base64,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" alt="EFRO">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">ROVANIEMI (EFRO)</h3>
+            <p>3h 55min<br> 539€<br> 2395Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://a.cdn-hotels.com/gdcs/production92/d1580/9a28fc70-9bea-11e8-a1b5-0242ac110053.jpg" alt="KSFO">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">SAN FRANCISCO (KSFO)</h3>
+            <p>11h 34min<br> 1633€<br> 8977Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="NewYork.webp" alt="KLGA">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">NEWYORK (KLGA)</h3>
+            <p>1h 24min<br> 226€<br> 522Km</p>
+            <a href="" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://a.cdn-hotels.com/gdcs/production92/d1580/9a28fc70-9bea-11e8-a1b5-0242ac110053.jpg" alt="KSFO">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">SAN FRANCISCO (KSFP)</h3>
+            <p>6h 33min<br> 819€<br> 4076Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/OIP.z4ydq86goMloDj54tAB3zgHaE5?rs=1&pid=ImgDetMain" alt="KLAS">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">LAS VEGAS (KLAS)</h3>
+            <p>6h 13min<br> 737€<br> 3597Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://wallpaperaccess.com/full/2029264.jpg" alt="CYVR">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">VANCOUVER (CYVR)</h3>
+            <p>5h 54min<br> 751€<br> 3682Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>      
+        <div class="flight-card">
+            <img src="data:image/jpeg;base64,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" alt="KLAX">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">LOS ANGELES (KLAX)</h3>
+            <p>6h 13min<br> 800€<br> 3973Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/R.2606772da1972bb4fe43271ea268dec8?rik=IGbOvj1uQmFFag&pid=ImgRaw&r=0" alt="MMMX">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">MEXICO (MMMX)</h3>
+            <p>5h 37min<br> 750€<br> 3717Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/OIP.tJMvTIrDNG1QwdVf8NLLQQHaFL?rs=1&pid=ImgDetMain" alt="MUHA">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">LA HAVANE (MUHA)</h3>
+            <p>4h 14min<br> 570€<br> 2619Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/R.f612e2382a04fa5aec0ca3f6345e10e8?rik=aei3VdNEzLPOXA&pid=ImgRaw&r=0" alt="PADQ">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">KODIAK (PADQ)</h3>
+            <p>7h 48min<br> 1007€<br> 5280Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="Paris.webp" alt="LFPG">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">PARIS (LFPG)</h3>
+            <p>6h 20min<br> 1049€<br> 5525Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/R.fe87591945db2e10d6a32352cc6af24a?rik=dxqnCWfMQaKPvA&pid=ImgRaw&r=0" alt="PANC">
+            <h3 class="dep">MONTREAL (CYUL)</h3>
+            <h3 class="arr">ANCHORAGE (PANC)</h3>
+            <p>7h 03min<br> 1056€<br> 5023Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://a.cdn-hotels.com/gdcs/production53/d1468/128397b0-57d2-4183-b9fb-bf6a5254d19c.jpg" alt="WSSS">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">SINGAPOR (WSSS)</h3>
+            <p>12h 27min<br> 1909€<br> 10742Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="buenos-aires.webp" alt="SAEZ">
+            <h3 class="dep">PARIS (LFPO)</h3>
+            <h3 class="arr">BUENOS AIRES (SAEZ)</h3>
+            <p>13h 28min<br> 1961€<br> 11069Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        <div class="flight-card">
+            <img src="https://th.bing.com/th/id/R.6d89776000bfb3458567dc9a1ecc6a8a?rik=UdCX9skpH46XEA&riu=http%3a%2f%2fallezlarochelle.a.l.pic.centerblog.net%2fo%2fa49ead71.jpg&ehk=rGt841cJxxb85Pbvm2Iho%2bzcavov9Wz6F6j7oN7nAhQ%3d&risl=&pid=ImgRaw&r=0" alt="LFBH">
+            <h3 class="dep">NICE (LFMN)</h3>
+            <h3 class="arr">LA ROCHEL (LFBH)</h3>
+            <p>1h 42min<br> 256€<br> 719Km</p>
+            <a href="#" class="reserve-button">Réservez maintenant [INOP]</a>
+        </div>
+        
+        
+
+      
+        
+        
+    </div>
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/réglement/réglement.html">Réglement</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-link" href="/Mentions_Légales/Mentions_Légales.html">Mentions Légales</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h4>© World Air</h4>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="destination.js"></script> <!-- Lien vers le fichier JavaScript -->
+</html>
